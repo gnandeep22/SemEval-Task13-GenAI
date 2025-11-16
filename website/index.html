@@ -120,22 +120,25 @@
             font-weight: 600;
         }
 
-        #codeInput {
+        #codeInput, #codeInputB, #codeInputC {
             width: 100%;
             height: 400px;
             padding: 15px;
             border: 2px solid #dee2e6;
             border-radius: 10px;
             font-family: 'Courier New', monospace;
-            font-size: 14px;
+            font-size: 16px;
+            line-height: 1.6;
             resize: vertical;
             background: white;
             transition: border-color 0.3s;
+            color: #212529;
         }
 
-        #codeInput:focus {
+        #codeInput:focus, #codeInputB:focus, #codeInputC:focus {
             outline: none;
             border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
         .button-group {
@@ -378,11 +381,11 @@ def calculate_sum(numbers):
                     <textarea id="codeInputB" placeholder="Paste your code here...
 
 Example:
-def fibonacci(n: int) -> int:
-    '''Calculate the nth Fibonacci number.'''
-    if n <= 1:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)"></textarea>
+def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total"></textarea>
                     
                     <div class="button-group">
                         <button class="btn btn-primary" onclick="analyzeCode('B')">
@@ -418,12 +421,11 @@ def fibonacci(n: int) -> int:
                     <textarea id="codeInputC" placeholder="Paste your code here...
 
 Example:
-class DataProcessor:
-    def __init__(self, data):
-        self.data = data
-    
-    def process(self):
-        return [x * 2 for x in self.data]"></textarea>
+def calculate_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total"></textarea>
                     
                     <div class="button-group">
                         <button class="btn btn-primary" onclick="analyzeCode('C')">
