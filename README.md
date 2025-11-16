@@ -95,8 +95,8 @@ project/
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/ai-code-detection.git
-cd ai-code-detection
+git clone ttps://github.com/yourusername/ai-code-detection.git](https://github.com/gnandeep22/SemEval-Task13-GenAI.git
+cd SemEval-Task13-GenAI
 ```
 
 ### Step 2: Install Dependencies
